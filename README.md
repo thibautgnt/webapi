@@ -1,41 +1,43 @@
-# Programmation WEB : API - Thibaut GENET
+# 🌐 Programmation WEB : API - Thibaut GENET
 
-Ce projet est une page web simple, développée dans le cadre du cours de programmation WEB à l'Efrei, qui explore l'utilisation de différentes API.
+Bienvenue dans ce projet de programmation web ! Ce site a été développé pour le cours de **Programmation WEB** à l'Efrei et met en avant l'utilisation de plusieurs APIs 🌟.
 
-## Structure du projet
+## 📂 Structure du Projet
 
-- `index.html` : Page principale contenant le code HTML.
-- `style.css` : Feuille de style CSS pour la mise en forme et le design en glassmorphisme.
-- `script.js` : Script JavaScript permettant de gérer les interactions avec les API.
+- `index.html` : 📄 Page principale avec le code HTML.
+- `style.css` : 🎨 Feuille de style pour la mise en forme en glassmorphisme.
+- `script.js` : ⚙️ Script JavaScript pour gérer les interactions avec les APIs.
 
-## Fonctionnalités
+## 🚀 Fonctionnalités
 
-Ce site propose plusieurs exemples d'intégration d'API :
+Découvrez plusieurs exemples d'intégration d'APIs :
 
-1. **API Météo (open-meteo.com)**  
-   Affiche la météo en fonction de la ville sélectionnée.
+1. **🌤️ API Météo** (open-meteo.com)
+   > Sélectionne une ville et affiche la météo actuelle.
 
-2. **API Pays (restcountries.com)**  
-   Affiche des informations détaillées sur un pays sélectionné.
+2. **🌎 API Pays** (restcountries.com)
+   > Choisis un pays et découvre des informations comme la capitale, la population, etc.
 
-3. **API Guess Age (agify.io)**  
-   Devine l'âge moyen d'une personne selon son prénom.
+3. **👶 API Guess Age** (agify.io)
+   > Tape un prénom pour deviner l'âge moyen associé. Essaye ton prénom et amuse-toi !
 
-## Guide d'utilisation
+## 🔧 Guide d'Utilisation
 
-1. **Sélectionner une ville** pour voir la météo.
-2. **Choisir un pays** pour afficher des informations.
-3. **Entrer un prénom** pour connaître l'âge moyen estimé de la personne.
+1. **Sélectionner une ville** dans le menu déroulant pour voir la météo locale.
+2. **Choisir un pays** pour afficher des informations détaillées.
+3. **Entrer un prénom** et découvrir l'âge moyen estimé pour ce prénom 🎉.
 
-## Prérequis
+## ⚙️ Prérequis
 
-Pour utiliser ce projet, vous aurez besoin d'une connexion Internet pour accéder aux API externes.
+Une connexion Internet est requise pour accéder aux APIs externes et afficher les informations dynamiques.
 
-## Auteur
+## 👤 Auteur
 
 **Thibaut GENET**  
-_Etudiant en B3 CS1 à l'Efrei_
+📘 _Étudiant en B3 CS1 à l'Efrei_
+
+Projet réalisé dans le cadre d'un exercice de programmation web.
 
 ---
 
-Projet réalisé dans le cadre d'un exercice de programmation web.
+✨ *Merci d'explorer ce projet !* ✨
