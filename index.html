@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Programmation WEB : API - Thibaut GENET</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<header class="header">
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="glassmorph intro">
+    <h1>Programmation WEB : API</h1>
+    <h2>Thibaut GENET - B3 CS1</h2>
+    <p>Voici un site web créé pour le cours de programmation WEB à l'Efrei.</p>
+    <ul>
+        <li>Une</li>
+        <li>Super</li>
+        <li>Liste</li>
+        <li>Non</li>
+        <li>Ordonnée</li>
+    </ul>
+</div>
+
+<div class="api-row">
+    <div class="glassmorph">
+        <h2>API Météo</h2>
+        <p>Voici un exemple d'utilisation d'une API pour afficher la météo (open-meteo.com).</p><hr>
+        <div class="container">
+            <div class="left">
+                <label for="citySelect">Choisissez une ville :</label><br />
+                <select id="citySelect" onchange="fetchWeather()">
+                    <option>Sélectionner une ville</option>
+                    <option value="paris">Paris</option>
+                    <option value="lille">Lille</option>
+                    <option value="bordeaux">Bordeaux</option>
+                    <option value="lyon">Lyon</option>
+                    <option value="marseille">Marseille</option>
+                </select>
+            </div>
+            <div class="right" id="weather">
+                <p>Sélectionner une ville</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="glassmorph">
+        <h2>API Pays</h2>
+        <p>Voici un exemple d'utilisation d'une API pour afficher des informations sur un pays (restcountries.com).</p><hr>
+        <div class="container">
+            <div class="left">
+                <label for="countrySelect">Sélectionnez un pays :</label><br />
+                <select id="countrySelect" onchange="fetchCountryInfo()">
+                    <option value="">Sélectionner un pays</option>
+                    <option value="India">Inde</option>
+                    <option value="France">France</option>
+                    <option value="Japan">Japon</option>
+                    <option value="Brazil">Brésil</option>
+                    <option value="Australia">Australie</option>
+                </select>
+            </div>
+            <div class="right" id="countryInfo">
+                <p>Sélectionnez un pays pour afficher les informations.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="glassmorph">
+        <h2>API Guess Age</h2>
+        <p>Voici un exemple d'utilisation d'une API pour deviner l'âge d'une personne en fonction de son prénom (agify.io).</p><hr>
+        <div class="container">
+            <div class="left">
+                <label for="nameInput">Entrez un prénom :</label><br />
+                <input type="text" id="nameInput" oninput="fetchAge()">
+            </div>
+            <div class="right" id="age">
+                <p>Entrez un prénom</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
