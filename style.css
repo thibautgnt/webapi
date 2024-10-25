@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(300deg, deepskyblue, darkviolet, blue);
+    background: linear-gradient(300deg, deepskyblue, darkviolet, blue) ;
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
     display: flex;
@@ -20,7 +20,7 @@ body {
 .header {
     position: relative;
     top: 0;
-    width: 78%;
+    width: 78.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,27 +31,31 @@ body {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 20px;
+    padding: 15px;
     margin-top: 20px;
 }
 
 .nav {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 20px;
     padding: 0;
     margin: 0;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
 }
 
 .nav-list li {
-    display: inline;
+    display: inline-block;
 }
 
 .nav-list a {
@@ -59,15 +63,33 @@ body {
     text-decoration: none;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
-    padding: 8px 16px;
+    padding: 10px 15px;
     border-radius: 8px;
-    transition: background 0.3s ease;
+    position: relative;
+    transition: color 0.3s ease, background 0.3s ease;
 }
 
-.nav-list a:hover {
-    background: rgba(255, 255, 255, 0.3);
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 100%;
+    background: #fff4f4;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
 }
 
+.nav-list a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.logo {
+    width: 80px;
+}
 
 .glassmorph {
     background: rgba(255, 255, 255, 0.2);
@@ -77,11 +99,12 @@ body {
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 20px;
+
 }
 
 .intro {
     width: 78%;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .api-row {
@@ -90,7 +113,7 @@ body {
     width: 80%;
     margin-top: 20px;
     gap: 20px;
-    min-height: 450px;
+    min-height: 500px;
 }
 
 select, input {

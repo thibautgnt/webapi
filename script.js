@@ -135,7 +135,7 @@ async function fetchCountryInfo() {
         const region = countryData.region;
 
         countryInfoDiv.innerHTML = `
-            <img src="${flag}" alt="Drapeau de ${countrySelect}" width="50">
+            <img src="${flag}" alt="Drapeau de ${countrySelect}" width="40">
             <p><strong>Capitale :</strong> ${capital}</p>
             <p><strong>Population :</strong> ${population.toLocaleString()}</p>
             <p><strong>Région :</strong> ${region}</p>
